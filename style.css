@@ -66,6 +66,16 @@ header {
   height: 450px;
 }
 
+.container-form {
+  width: 50%;
+}
+
+.img-form {
+  width: 100%;
+  object-fit: cover;
+  height: 620px;
+}
+
 .producto-img {
   width: 100%;
   height: 450px;
@@ -85,15 +95,36 @@ header {
   background-color: #bca177;
 }
 
+.nav-item-footer {
+  margin-bottom: 30px;
+}
+
+.fa-brands {
+  font-size: 22px;
+}
+
 @media (max-width: 1000px) {
   .navbar-nav {
     gap: 0px;
+  }
+  .hidden {
+    display: none;
+  }
+  .redes {
+    display: flex;
+    gap: 30px;
+  }
+  .fa-brands {
+    font-size: 32px;
   }
 }
 
 @media (max-width: 780px) {
   .banner p {
     font-size: 18px;
+  }
+  .banner {
+    width: 80%;
   }
   .cont-prod {
     display: flex;
@@ -102,7 +133,8 @@ header {
   .producto-dos {
     flex-direction: column-reverse;
   }
-  .container-productos {
+  .container-productos,
+  .container-form {
     width: 100%;
   }
   .producto-cuatro,
