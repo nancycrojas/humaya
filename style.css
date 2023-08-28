@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   height: 100vh;
 }
@@ -8,14 +14,14 @@ header {
   background-size: cover;
   background-position: center;
   width: 100%;
-  /* height: auto; */
+  background-attachment: fixed;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
   color: white;
 }
 
-.altura {
+.banner {
   height: 500px;
   width: 50%;
   display: flex;
@@ -26,8 +32,8 @@ header {
   gap: 20px;
 }
 
-.altura p {
-  font-size: 18px;
+.banner p {
+  font-size: 24px;
 }
 
 .texto-calidad {
@@ -38,6 +44,10 @@ header {
   gap: 50px;
 }
 
+.nav-item {
+  font-size: 22px;
+}
+
 .icono {
   width: 50px;
 }
@@ -45,6 +55,10 @@ header {
 .producto-titulo {
   color: #bca177;
   font-size: 24px;
+}
+
+.presentacion {
+  color: #bca177;
 }
 
 .container-productos {
@@ -58,6 +72,14 @@ header {
   object-fit: cover;
 }
 
+.producto-cuatro {
+  background-color: #bca177;
+}
+
+.img-producto-cuatro {
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   .navbar-nav {
     gap: 0px;
@@ -65,10 +87,27 @@ header {
 }
 
 @media (max-width: 780px) {
+  .banner p {
+    font-size: 18px;
+  }
+  .cont-prod {
+    display: flex;
+    flex-direction: column;
+  }
+  .producto-dos {
+    flex-direction: column-reverse;
+  }
+  .container-productos {
+    width: 100%;
+  }
+  .producto-cuatro {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
-  .altura {
+  .banner {
     width: 80%;
   }
   .icono {
@@ -76,12 +115,5 @@ header {
   }
   .texto-calidad {
     font-size: 10px;
-  }
-  .cont-prod {
-    display: flex;
-    flex-direction: column;
-  }
-  .container-productos {
-    width: 100%;
   }
 }
