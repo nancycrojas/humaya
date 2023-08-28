@@ -80,6 +80,10 @@ header {
   width: 100%;
 }
 
+.form-control {
+  background-color: #bca177;
+}
+
 @media (max-width: 1000px) {
   .navbar-nav {
     gap: 0px;
@@ -100,7 +104,8 @@ header {
   .container-productos {
     width: 100%;
   }
-  .producto-cuatro {
+  .producto-cuatro,
+  .contactanos {
     display: flex;
     flex-direction: column;
   }
