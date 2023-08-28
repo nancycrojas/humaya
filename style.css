@@ -80,7 +80,8 @@ header {
   width: 100%;
 }
 
-.form-control {
+.form-control,
+.card-body {
   background-color: #bca177;
 }
 
@@ -108,6 +109,10 @@ header {
   .contactanos {
     display: flex;
     flex-direction: column;
+  }
+  .recetas {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
